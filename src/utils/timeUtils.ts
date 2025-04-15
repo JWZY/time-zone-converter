@@ -42,7 +42,6 @@ export function convertTime(
     const sourceDate = new Date(Date.UTC(year, month - 1, day, hours, minutes));
     
     // Adjust for source timezone offset
-    const sourceOptions = { timeZone: sourceTimezone };
     const sourceParts = new Intl.DateTimeFormat('en-US', {
       timeZone: sourceTimezone,
       year: 'numeric',
